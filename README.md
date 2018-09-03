@@ -34,9 +34,12 @@
     * [任务列表](#任务列表)
     * [删除线](#删除线)
     * [自动链接](#自动链接)
+    * [emoji](#emoji)
 * [奇技淫巧](#奇技淫巧)
     * [画流程图和时序图](#画流程图和时序图)
+    * [插入数学公式](#插入数学公式)
     * [用 Markdown 做 PPT](#用-markdown-做-ppt)
+    * [更多](#更多)
 * [参考](#参考)
 
 <!-- vim-markdown-toc -->
@@ -95,7 +98,7 @@
 
 ### 标题
 
-Markdown：
+**Markdown：**
 
 ```
 # atx-style 一级标题
@@ -111,7 +114,7 @@ Setext-style 一级标题
 ---
 ```
 
-预览效果：
+**预览效果：**
 
 > # atx-style 一级标题
 > 
@@ -125,7 +128,7 @@ Setext-style 一级标题
 > 二级标题
 > ---
 
-对应 HTML：
+**对应 HTML：**
 
 ```html
 <h1>atx-style 一级标题</h1>
@@ -143,7 +146,7 @@ Setext-style 一级标题
 
 中间没有空行的连续不断的几行文字被视为一个段落。
 
-Markdown：
+**Markdown：**
 
 ```
 白日依山尽，
@@ -157,7 +160,7 @@ Markdown：
 （句号后面有俩空格）
 ```
 
-预览效果：
+**预览效果：**
 
 白日依山尽，
 
@@ -169,7 +172,7 @@ Markdown：
 更上一层楼。  
 （句号后面有俩空格）
 
-对应 HTML：
+**对应 HTML：**
 
 ```html
 <p>白日依山尽，</p>
@@ -190,7 +193,7 @@ Markdown：
 
 对段落或者部分文本的强调效果。
 
-Markdown：
+**Markdown：**
 
 ```
 后面俩字**加黑**
@@ -200,7 +203,7 @@ Markdown：
 后面俩字_斜体_
 ```
 
-预览效果：
+**预览效果：**
 
 后面俩字**加黑**
 后面俩字__加黑__
@@ -208,7 +211,7 @@ Markdown：
 后面俩字*斜体*
 后面俩字_斜体_
 
-对应 HTML：
+**对应 HTML：**
 
 ```html
 <p>
@@ -228,7 +231,7 @@ Markdown：
 
 ### 引用块
 
-Markdown：
+**Markdown：**
 
 ```
 > 引用块段落一。
@@ -239,7 +242,7 @@ Markdown：
 > ### 引用块内的标题
 ```
 
-预览效果：
+**预览效果：**
 
 > 引用块段落一。
 >
@@ -249,7 +252,7 @@ Markdown：
 >
 > ### 引用块内的标题
 
-对应 HTML：
+**对应 HTML：**
 
 ```html
 <blockquote>
@@ -266,7 +269,7 @@ Markdown：
 
 Markdown 支持行内式链接和引用式链接。
 
-Markdown：
+**Markdown：**
 
 ```
 行内式 [博客](https://mazhuang.org "我的个人博客") 链接，带 title。
@@ -281,7 +284,7 @@ Markdown：
 [2]: https://github.com/mzlogin "我的 GitHub 主页"
 ```
 
-预览效果：
+**预览效果：**
 
 行内式 [博客](https://mazhuang.org "我的个人博客") 链接，带 title。
 
@@ -294,46 +297,33 @@ Markdown：
 [1]: https://mazhuang.org
 [2]: https://github.com/mzlogin "我的 GitHub 主页"
 
-对应 HTML：
+**对应 HTML：**
 
 ```html
-<p>
-  行内式&nbsp;
-  <a href="https://mazhuang.org" title="我的个人博客">博客</a>
-  &nbsp;链接，带 title。
-</p>
-<p>
-  行内式&nbsp;
-  <a href="https://github.com/mzlogin">GitHub</a>
-  &nbsp;链接。
-</p>
-<p>
-  引用式&nbsp;
-  <a href="https://mazhuang.org">博客</a>
-  &nbsp;链接。
-</p>
-<p>
-  引用式&nbsp;
-  <a href="https://github.com/mzlogin" title="我的 GitHub 主页">GitHub</a>
-  &nbsp;链接，带 title。
-</p>
+<p>行内式 <a href="https://mazhuang.org" title="我的个人博客">博客</a> 链接，带 title。</p>
+
+<p>行内式 <a href="https://github.com/mzlogin">GitHub</a> 链接。</p>
+
+<p>引用式 <a href="https://mazhuang.org">博客</a> 链接。</p>
+
+<p>引用式 <a href="https://github.com/mzlogin" title="我的 GitHub 主页">GitHub</a> 链接，带 title。</p>
 ```
 
 ### 图片
 
 在超链接的写法前加一个 `!`，就是引用图片的方法。
 
-Markdown：
+**Markdown：**
 
 ```
 ![Alt text](https://mazhuang.org/favicon.ico "favicon")
 ```
 
-预览效果：
+**预览效果：**
 
 ![Alt text](https://mazhuang.org/favicon.ico "favicon")
 
-对应 HTML：
+**对应 HTML：**
 
 ```html
 <img src="https://mazhuang.org/favicon.ico" alt="Alt text" title="favicon">
@@ -343,7 +333,7 @@ Markdown：
 
 包括有序列表和无序列表。
 
-Markdown：
+**Markdown：**
 
 ```
 - 苹果
@@ -355,7 +345,7 @@ Markdown：
 3. 榴莲
 ```
 
-预览效果：
+**预览效果：**
 
 - 苹果
 - 葡萄
@@ -365,7 +355,7 @@ Markdown：
 2. 葡萄
 3. 榴莲
 
-对应 HTML：
+**对应 HTML：**
 
 ```html
 <ul>
@@ -380,13 +370,13 @@ Markdown：
 </ol>
 ```
 
-其中无序列表的标记可以使用 `+`、`-` 或 `*`，有序列表前的数字可以是无序的。
+其中无序列表的标记可以使用 `+`、`-` 或 `*`，有序列表前的数字可以是乱序的。
 
 ### 代码块
 
 支持行内代码和代码块。
 
-Markdown：
+**Markdown：**
 
     Android 里使用 `TextUtils` 类的 `isEmpty` 方法来判断字符串是否为空。
 
@@ -396,7 +386,7 @@ Markdown：
     }
     ```
 
-预览效果：
+**预览效果：**
 
 Android 里使用 `TextUtils` 类的 `isEmpty` 方法来判断字符串是否为空。
 
@@ -406,17 +396,25 @@ if (TextUtils.isEmpty(text)) {
 }
 ```
 
-对应 HTML：
+**对应 HTML：**
 
 ```html
+<p>Android 里使用 <code>TextUtils</code> 类的 <code>isEmpty</code> 方法来判断字符串是否为空。</p>
 
+<div class="highlight highlight-source-java"><pre><span class="pl-k">if</span> (<span class="pl-smi">TextUtils</span><span class="pl-k">.</span>isEmpty(text)) {
+    <span class="pl-k">return</span> <span class="pl-c1">null</span>;
+}</pre></div>
 ```
+
+上例中的语言标记 `java` 可选填，可用于在编辑器和渲染后的效果里添加语法高亮。
+
+块式代码也可以对整个代码段缩进四个空格，或一个 Tab 来实现。
 
 ### 水平分割线
 
 使用一个单独行里的三个或以上 `*`、`-` 来生产一条水平分割线，它们之间可以有空格。
 
-Markdown：
+**Markdown：**
 
 ```
 ***
@@ -426,7 +424,7 @@ Markdown：
 - - -
 ```
 
-预览效果：
+**预览效果：**
 
 > ***
 > 
@@ -434,7 +432,7 @@ Markdown：
 > 
 > - - -
 
-对应 HTML：
+**对应 HTML：**
 
 ```
 <hr />
@@ -446,25 +444,174 @@ Markdown：
 
 ### 嵌入 HTML
 
-Markdown 标记语言的目的不是替代 HTML，也不是发明一种更便捷的插入 HTML 标签的方式。它所能产生的 HTML 标签只是 HTML 里的一个很小的子集。
+Markdown 标记语言的目的不是替代 HTML，也不是发明一种更便捷的插入 HTML 标签的方式。它对应的只是 HTML 标签的一个很小的子集。
 
 对于那些没有办法用 Markdown 语法来对应的 HTML 标签，直接使用 HTML 来写就好了。
 
 ## 扩展语法
 
+本节的内容是介绍一些受到广泛支持的 Markdown 扩展语法。
+
 ### 表格
+
+**Markdown：**
+
+    | 编号  | 姓名（左） | 年龄（右） | 性别（中） |
+    | ----- | :--------  | ---------: | :------:   |
+    | 0     | 张三       | 28         | 男         |
+    | 1     | 李四       | 29         | 男         |
+
+**预览效果：**
+
+| 编号  | 姓名（左） | 年龄（右） | 性别（中） |
+| ----- | :--------  | ---------: | :------:   |
+| 0     | 张三       | 28         | 男         |
+| 1     | 李四       | 29         | 男         |
+
+**对应 HTML：**
+
+```html
+
+```
 
 ### 任务列表
 
+在 GitHub / GitLab 里有较好的支持。
+
+**Markdown：**
+
+```
+- [x] 洗碗
+- [ ] 清洗油烟机
+- [ ] 拖地
+```
+
+**预览效果：**
+
+- [x] 洗碗
+- [ ] 清洗油烟机
+- [ ] 拖地
+
+**对应 HTML：**
+
+```html
+
+```
+
+如果是在 GitHub / GitLab 的 Issue 里，会附赠任务完成比例提示效果：
+
+![task list 1](./assets/task-list-1.png)
+
+还可以直接在网页上拖动调整顺序，勾选和取消勾选。
+
+![task list 2](./assets/task-list-2.png)
+
 ### 删除线
+
+**Markdown：**
+
+```
+后面三个字打上~~删除线~~。
+```
+
+**预览效果：**
+
+后面三个字打上~~删除线~~。
+
+**对应 HTML：**
+
+```html
+<p>后面三个字打上<del>删除线</del>。</p>
+```
 
 ### 自动链接
 
+自动链接扩展，即：当识别到 URL，或用 `<`、`>` 包括的 URL 时，会自动为其生成 `a` 标签。
+
+**Markdown：**
+
+```
+https://github.com
+
+<example@gmail.com>
+```
+
+**预览效果：**
+
+https://github.com
+
+<example@gmail.com>
+
+**对应 HTML：**
+
+```html
+<p><a href="https://github.com">https://github.com</a></p>
+
+<p><a href="mailto:example@gmail.com">example@gmail.com</a></p>
+```
+
+### emoji
+
+以 GitHub Pages 为例。
+
+**Markdown：**
+
+```
+:camel: :blush: :smile:
+```
+
+**预览效果：**
+
+:camel: :blush: :smile:
+
+**对应 HTML：**
+
+```html
+<p>
+  <img class="emoji" title=":camel:" alt=":camel:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f42b.png" height="20" width="20">
+  <img class="emoji" title=":blush:" alt=":blush:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f60a.png" height="20" width="20">
+  <img class="emoji" title=":smile:" alt=":smile:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">
+</p>
+```
+
 ## 奇技淫巧
+
+脑洞清奇的工程师们还发掘了很多使用 Markdown 的方法，大部分都是引入第三方 JavaScript 插件来实现。对这部分我只做简述，对其中的部分功能比如作图等，还是推荐用专门的可视化工具去做。
 
 ### 画流程图和时序图
 
+有部分网站和编辑器实现了对 Markdown 里流程图和时序图的支持，比如我们使用的项目管理工具 TAPD 的在线编辑器，还有 VSCode + 插件 Markdown Preview Enhanced 等。
+
+以我们使用的项目管理工具 TAPD 的在线编辑器为例：
+
+![流程图](./assets/tapd-markdown-flowchart.png)
+
+![时序图](./assets/tapd-markdown-seq.png)
+
+### 插入数学公式
+
+仍然以 TAPD 为例：
+
+![数学公式](./assets/tapd-markdown-math.png)
+
+应该是利用 JavaScript 支持了 LaTex 公式语法。
+
 ### 用 Markdown 做 PPT
+
+有专门的工具 [Marp](https://github.com/yhatt/marp)，另外使用 VSCode + 插件 Markdown Preview Enhanced 也可以实现。
+
+### 更多
+
+想象力丰富的工程师们还扩展了很多基于 Markdown 的玩法，包括但不限于：
+
+* 自动生成 / 更新 Table of Contents
+* 流程图 / 时序图
+* 制作幻灯片
+* 集成 PlantUML / GraphViz 的能力
+* 导出 HTML / PDF / 电子书
+* ...
+
+以上功能基本都可以用 VSCode + 插件 Markdown Preview Enhanced 实现。
 
 ## 参考
 
