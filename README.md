@@ -88,7 +88,7 @@
 
 * 专用编辑器
 
-    Ulysses / Mou / Markpad
+    Ulysses / Mou / Typora / Markpad
 
 * 在线编辑器
 
@@ -426,11 +426,11 @@ if (TextUtils.isEmpty(text)) {
 
 **预览效果：**
 
-> ***
-> 
-> -----
-> 
-> - - -
+***
+
+-----
+
+- - -
 
 **对应 HTML：**
 
@@ -471,7 +471,30 @@ Markdown 标记语言的目的不是替代 HTML，也不是发明一种更便捷
 **对应 HTML：**
 
 ```html
-
+<table>
+  <thead>
+    <tr>
+      <th>编号</th>
+      <th align="left">姓名（左）</th>
+      <th align="right">年龄（右）</th>
+      <th align="center">性别（中）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td align="left">张三</td>
+      <td align="right">28</td>
+      <td align="center">男</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td align="left">李四</td>
+      <td align="right">29</td>
+      <td align="center">男</td>
+    </tr>
+  </tbody>
+</table>
 ```
 
 ### 任务列表
@@ -495,7 +518,11 @@ Markdown 标记语言的目的不是替代 HTML，也不是发明一种更便捷
 **对应 HTML：**
 
 ```html
-
+<ul class="contains-task-list">
+  <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> 洗碗</li>
+  <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> 清洗油烟机</li>
+  <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> 拖地</li>
+</ul>
 ```
 
 如果是在 GitHub / GitLab 的 Issue 里，会附赠任务完成比例提示效果：
@@ -594,7 +621,7 @@ https://github.com
 
 ![数学公式](./assets/tapd-markdown-math.png)
 
-应该是利用 JavaScript 支持了 LaTex 公式语法。
+应该是利用 JavaScript 支持了 LaTeX 公式语法。
 
 ### 用 Markdown 做 PPT
 
@@ -613,8 +640,11 @@ https://github.com
 
 以上功能基本都可以用 VSCode + 插件 Markdown Preview Enhanced 实现。
 
+另外可以参考我以前的一篇博客 [关于 Markdown 的一些奇技淫巧](https://mazhuang.org/2017/09/01/markdown-odd-skills/)。
+
 ## 参考
 
 * [Markdown: Syntax - DARING FIREBALL](https://daringfireball.net/projects/markdown/syntax)
 * [Markdown - 维基百科](https://zh.wikipedia.org/wiki/Markdown)
 * [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
+* [关于 Markdown 的一些奇技淫巧](https://mazhuang.org/2017/09/01/markdown-odd-skills/)
