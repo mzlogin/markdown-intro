@@ -39,6 +39,7 @@
     * [画流程图和时序图](#画流程图和时序图)
     * [插入数学公式](#插入数学公式)
     * [用 Markdown 做 PPT](#用-markdown-做-ppt)
+    * [用 Markdown 写微信公众号](#用-markdown-写微信公众号)
     * [更多](#更多)
 * [参考](#参考)
 
@@ -62,13 +63,13 @@
 
 * 技术社区和写作平台
 
-    StackOverflow、CSDN、掘金、简书、GitBook
+    StackOverflow、CSDN、掘金、简书、GitBook、有道云笔记
 
 * 论坛
 
     V2EX、光谷社区
 
-个人感觉比较遗憾的一点是各平台可能采用不同语言实现的 Markdown 解析引擎，或采用同一解析引擎的不同版本，而且可能有不同程度的定制与扩展，这导致在不同平台上使用 Markdown 写作时体验并不完全一致。
+个人感觉比较遗憾的一点是各平台可能采用不同语言实现的 Markdown 解析引擎，或采用同一解析引擎的不同版本，而且可能有不同程度的定制与扩展，这导致在不同平台上使用 Markdown 写作时体验并不完全一致。不过幸好对于大家公认的一些标准语法，各家都是支持的。
 
 ### 编辑工具
 
@@ -619,6 +620,14 @@ https://github.com
 ### 用 Markdown 做 PPT
 
 有专门的工具 [Marp](https://github.com/yhatt/marp)，另外使用 VSCode + 插件 Markdown Preview Enhanced 也可以实现。
+
+### 用 Markdown 写微信公众号
+
+可以将公众号素材用 Markdown 编辑好后，贴到在线排版工具以后，复制到公众号编辑器里即可。有多种页面主题和代码主题可选择。
+
+我维护的工具地址：<https://md.mazhuang.org>
+
+![微信公众号](./assets/wechat-markdown.png)
 
 ### 更多
 
