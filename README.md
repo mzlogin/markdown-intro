@@ -648,3 +648,9 @@ https://github.com
 * [Markdown - 维基百科](https://zh.wikipedia.org/wiki/Markdown)
 * [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
 * [关于 Markdown 的一些奇技淫巧](https://mazhuang.org/2017/09/01/markdown-odd-skills/)
+
+---
+
+欢迎关注我的微信公众号，接收 markdown-intro 最新动态。
+
+<div align="center"><img width="192px" height="192px" src="https://mazhuang.org/assets/images/qrcode.jpg"/></div>
